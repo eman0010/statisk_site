@@ -1,0 +1,31 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+
+
+/**************** HEADER ************/
+}
+.main_nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.main_nav li{
+    padding: 0 35px;
+}
+
+.main_nav h1{
+    margin: 12px;
+}
+
+a{
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+}
+
