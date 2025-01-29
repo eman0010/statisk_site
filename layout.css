@@ -1,13 +1,29 @@
 *{
     font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+img{
+    width: 100%;
+}
 
 
 /**************** HEADER ************/
+header{
+border-bottom: 2px solid black;
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
+
 .main_nav{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .main_nav ul{
@@ -17,6 +33,7 @@
 
 .main_nav li{
     padding: 0 35px;
+    list-style-type: none;
 }
 
 .main_nav h1{
@@ -24,8 +41,43 @@
 }
 
 a{
-    list-style-type: none;
     text-decoration: none;
     color: inherit;
+    /* padding: 0 35px; */
+}
+
+/*************' INDEX *******************/
+.categorie_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.categorie {
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorie:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+@media (width > 768px){
+    .main_nav{
+        display: flex;
+        flex-direction: row;
+    }
 }
 
