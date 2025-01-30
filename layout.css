@@ -16,19 +16,23 @@ img{
 /**************** HEADER ************/
 header{
 border-bottom: 2px solid black;
-display: flex;
-align-items: center;
-justify-content: space-between;
 }
-
 .main_nav{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.main_nav img{
+    width: 200px;
+    padding: 10px;
+}
 .main_nav ul{
     display: flex;
     flex-direction: row;
+    margin: 0;
+    padding: 0;
 }
 
 .main_nav li{
@@ -43,10 +47,10 @@ justify-content: space-between;
 a{
     text-decoration: none;
     color: inherit;
-    /* padding: 0 35px; */
 }
 
 /*************' INDEX *******************/
+
 .categorie_list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
@@ -74,10 +78,12 @@ a{
     cursor: pointer;
 }
 
+/************* TABLET ***************/
+
 @media (width > 768px){
     .main_nav{
-        display: flex;
         flex-direction: row;
     }
+    
 }
 
